@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  airticket-fe:
+    build: .
+    image: airticket-fe:latest
+    ports:
+      - "5019:80"
+    restart: unless-stopped

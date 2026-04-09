@@ -1,0 +1,37 @@
+.account-form__title {
+  margin-bottom: 8px;
+}
+.account-form__title-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+.account-form__content {
+  margin-top: 8px;
+}
+.account-form__avatar-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.account-form__avatar-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.account-form__avatar-desc {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 12px;
+}
+.account-form__switch {
+  margin-top: 8px;
+}
+.account-form__permissions {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px 12px 8px 12px;
+  margin-top: 18px;
+}

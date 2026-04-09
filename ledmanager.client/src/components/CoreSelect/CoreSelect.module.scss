@@ -1,0 +1,8 @@
+.core-select {
+  :global(.ant-select-prefix) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+  }
+}

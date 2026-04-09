@@ -1,0 +1,20 @@
+services:
+  ledmanager.server:
+    image: ${DOCKER_REGISTRY-}ledmanager-server
+    build:
+      context: .
+      dockerfile: LedManager.Server/Dockerfile
+    ports:
+      - "5291:8080"
+      - "7245:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Host=host.docker.internal;Port=5430;Database=LedManagerDb;Username=admin;Password=admin
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - ./uploads:/app/wwwroot/uploads
+      - ./thumbnails:/app/wwwroot/thumbnails
+

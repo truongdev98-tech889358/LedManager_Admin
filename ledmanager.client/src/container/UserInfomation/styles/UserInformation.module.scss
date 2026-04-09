@@ -1,0 +1,280 @@
+@use "@/styles/variables.scss" as *;
+
+.userInfoBg {
+  min-height: calc(100vh - 64px);
+  padding: 40px 20px;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+}
+
+.userInfoCard {
+  width: 100%;
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.userInfoBanner {
+  height: 160px;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  position: relative;
+}
+
+.userInfoHeader {
+  padding: 0 40px;
+  margin-top: -60px;
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 32px;
+  z-index: 1;
+  position: relative;
+}
+
+.avatarWrapper {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.userInfoAvatar {
+  width: 140px !important;
+  height: 140px !important;
+  border-radius: 50% !important;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+.cameraBtn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
+
+  &:hover {
+    transform: scale(1.1);
+    color: #3b82f6;
+  }
+}
+
+.headerInfo {
+  margin-bottom: 12px;
+}
+
+.userInfoName {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.userInfoStats {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.userInfoLogin {
+  font-size: 14px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  .label {
+    font-weight: 500;
+  }
+
+  .value {
+    color: #ef4444;
+    font-weight: 600;
+  }
+}
+
+.userInfoCompany {
+  font-size: 14px;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.userInfoFormContent {
+  padding: 0 40px 40px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.userInfoFormRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.formFieldBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fieldLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.userInfoInput {
+  border-radius: 8px !important;
+  border: 1px solid #e2e8f0 !important;
+  padding: 10px 14px !important;
+  transition: all 0.2s ease !important;
+
+  &:focus, &:hover {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1) !important;
+  }
+}
+
+.errorMessage {
+  font-size: 12px;
+  color: #ef4444;
+  margin-top: 2px;
+}
+
+.userInfoPermsWrap {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+}
+
+.userInfoPermsBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.userInfoPermsItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  }
+
+  .permLabel {
+    font-size: 14px;
+    color: #475569;
+    font-weight: 500;
+  }
+}
+
+.userInfoPermsAllow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+
+  &.active {
+    color: #10b981;
+  }
+
+  &.inactive {
+    color: #f43f5e;
+  }
+}
+
+.userInfoFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.btnChangePwd {
+  height: 44px !important;
+  padding: 0 20px !important;
+  border-radius: 10px !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600 !important;
+}
+
+.btnSave {
+  height: 44px !important;
+  padding: 0 32px !important;
+  border-radius: 10px !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600 !important;
+  background: #2563eb !important;
+  border: none !important;
+
+  &:hover {
+    background: #1d4ed8 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .userInfoHeader {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .userInfoFormRow {
+    grid-template-columns: 1fr;
+  }
+
+  .userInfoPermsBox {
+    grid-template-columns: 1fr;
+  }
+
+  .userInfoFooter {
+    flex-direction: column-reverse;
+    
+    button {
+      width: 100%;
+    }
+  }
+}

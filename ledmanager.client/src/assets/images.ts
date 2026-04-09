@@ -1,0 +1,15 @@
+export const images = {
+  logo: "/images/kings-of-neon-logo.png",
+  logo2: "/images/kings-of-neon-logo.png",
+  scene: "/images/scene.jpg",
+  defaultBrandLogo: "/images/vietjet-air.png",
+  vietnamFlag: "/images/vietnamFlag.png",
+  usFlag: "/images/enFlag.png",
+  koreaFlag: "/images/koreaFlag.png",
+  wallet: "/images/wallet-icon.png",
+  banker: "/images/banker-icon.png",
+  credit: "/images/credit-card-icon.png",
+  paymentLater: "/images/pay-later-icon.png",
+  ATM: "/images/atm-card.png",
+  noImageAvailable: "/images/no-image-available.jpg",
+};
